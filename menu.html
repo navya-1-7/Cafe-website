@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+          <img src="images/logo.png" alt="Its Brown and Roasted Logo">
+        </a>
+  </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="store.html">Store</a>
+      <a href="photos.html">Gallery</a>
+    </nav>
+  </header>
+
+  <section class="menu-intro fade-in-section">
+    <h1>Welcome to Our Menu!</h1>
+    <p>
+      At <strong>It's Brown & Roasted</strong>, we take pride in serving you the finest coffee and delectable bites. Whether you're craving a rich espresso, a sweet pastry, or a hearty sandwich, we have something for everyone. Explore our carefully crafted menu to treat yourself to something special!
+    </p>
+  </section>
+
+  <section class="drink-images">
+    <img src="images/drink1.jpg" alt="Drink 1" class="drink-img">
+    <img src="images/drink2.jpg" alt="Drink 2" class="drink-img">
+    <img src="images/drink3.jpg" alt="Drink 3" class="drink-img">
+  </section>
+
+<button id="viewMenuBtn" class="view-menu-btn">View Menu</button>
+
+
+<div id="menuModal" class="modal">
+  <span class="close" id="closeModalBtn">&times;</span>
+  <img class="modal-content" id="menuImage" src="images/menu.png" alt="Menu Image">
+</div>
+  
+ 
+
+  <div class="footer-container"></div>
+
+
+
+<!-- JavaScript -->
+<script>
+
+  var modal = document.getElementById("menuModal");
+  var btn = document.getElementById("viewMenuBtn");
+  var span = document.getElementById("closeModalBtn");
+
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+ 
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('.footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
+

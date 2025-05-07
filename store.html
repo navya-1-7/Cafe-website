@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+          <img src="images/logo.png" alt="Its Brown and Roasted Logo">
+        </a>
+  </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+
+      <a href="photos.html">Gallery</a>
+    </nav>
+  </header>
+
+  <div class="store-heading fade-in-store">
+    <h1>Visit Our Store</h1>
+    <p>Come enjoy your favorite coffee in person. We’re located at Singasandra in Bengaluru.</p>
+  </div>
+
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.4625091644916!2d77.6436829740666!3d12.877954216926515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6bfffdc64ec9%3A0xfa61f08fdaf2f196!2sIt&#39;s%20Brown%20%26%20Roasted!5e0!3m2!1sen!2sin!4v1746630216725!5m2!1sen!2sin"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <div class="footer-container"></div>
+
+ 
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('.footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
+

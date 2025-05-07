@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>about</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+          <img src="images/logo.png" alt="Its Brown and Roasted Logo">
+        </a>
+  </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="store.html">Store</a>
+      
+    </nav>
+  </header>
+
+  <section class="photo-gallery fade-in-photos">
+    <h1>Inside It's Brown & Roasted</h1>
+    <p>Take a look at our café, our food, and our favorite cozy corners.</p>
+   
+
+    <div class="gallery-grid">
+      <img src="images/1.jpg" alt="Photo 1">
+      <img src="images/2.jpg" alt="Photo 2">
+      <img src="images/3.jpg" alt="Photo 3">
+      <img src="images/4.jpg" alt="Photo 4">
+      <img src="images/5.jpg" alt="Photo 5">
+      <img src="images/6.jpg" alt="Photo 6">
+      <img src="images/7.jpg" alt="Photo 7">
+      <img src="images/8.jpg" alt="Photo 8">
+      <img src="images/9.jpg" alt="Photo 9">
+      <img src="images/10.jpg" alt="Photo 10">
+      <img src="images/11.jpg" alt="Photo 11">
+      <img src="images/12.jpg" alt="Photo 12">
+    </div>
+    
+  </section>
+  
+
+  </section>
+  
+
+  <div class="footer-container"></div>
+
+ 
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('.footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
+
