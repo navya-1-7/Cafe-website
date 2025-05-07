@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Its Brown and Roasted</title>
+    <title>It's Brown and Roasted</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-</body>
-</html>
 
-
-<header>
+  <header>
     <div class="logo">
         <a href="index.html">
-            <img src="images/logo.png" alt="Its Brown and Roasted Logo">
-          </a>
+            <img src="images/logo.png" alt="It's Brown and Roasted Logo">
+        </a>
     </div>
     <nav>
       <a href="menu.html">Menu</a>
@@ -38,17 +34,17 @@
     <p>Craving coffee or a quick snack? We're right here! From signature brews to 
       delicious bites, IBR has everything you need for a perfect treat.</p>
 
-      <p><strong>Make your ME-TIME yummy ♡</strong></p>
-      <p class="small-text">WALK IN OR ORDER NOW</p>
+    <p><strong>Make your ME-TIME yummy ♡</strong></p>
+    <p class="small-text">WALK IN OR ORDER NOW</p>
 
-      <a href="https://www.swiggy.com/menu/940118?source=sharing" target="_blank" class="order-button">Order Now</a>
+    <a href="https://www.swiggy.com/menu/940118?source=sharing" target="_blank" class="order-button">Order Now</a>
   </div>
 
-
+  <!-- Container where footer will be injected -->
   <div class="footer-container"></div>
 
- 
   <script>
+    // Fetch footer.html and insert it into the .footer-container div
     fetch('footer.html')
       .then(response => response.text())
       .then(data => {
@@ -58,4 +54,5 @@
 
 </body>
 </html>
+
 
